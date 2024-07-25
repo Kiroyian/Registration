@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <p>Please fill out this form with the required information</p>
+    <form action="https://register-demo.freecodecamp.org" method="post">
+        <fieldset>
+            <label for="first-name">Enter Your First Name: <input type="text" id="first-name" name="first-name" required></label>
+            <label for="last-name">Enter Your Last Name: <input type="text" id="last-name" name="last-name" required></label>
+            <label for="email">Enter Your Email: <input type="email" id="email" required></label>
+            <label for="newpassword">Create New Password: <input type="password" id="new-password" required></label>
+        </fieldset>
+        <fieldset>
+            <legend>Account type (required)</legend>
+            <label for="personal-account">
+                <input type="radio" id="personal-account" class="inline" name="account-type" checked> Personal
+            </label>
+            <label for="business-acocount">
+                <input type="radio" id="business-acocount" class="inline" name="account-type"> Business
+            </label>
+        </fieldset>
+        <fieldset>
+            <label for="Upload a profile picture:">Upload a profile picture:
+                <input type="file" id="Upload a profile picture:" name="Upload a profile picture:">
+              </label>
+              <label>Input your age (years):
+                <input type="number" min="13" max="120" id="age" name="age" required>
+            </label>
+            <label id="residence">Country of residence?
+            <select id="residence" name="residence">
+                <option value="Select a country">Select a country</option>
+                <option value="Afghanistan">Afghanistan</option>
+                <option value="Albania">Albania</option>
+                <option value="Algeria">Algeria</option>
+                <option value="Andorra">Andorra</option>
+                <option value="Angola">Angola</option>
+                <option value="Antigua and Barbuda">Antigua and Barbuda</option>
+                <option value="Argentina">Argentina</option>
+                <option value="Armenia">Armenia</option>
+                <option value="Australia">Australia</option>
+                <option value="Austria">Austria</option>
+                <option value="Azerbaijan">Azerbaijan</option>
+            </select>
+            </label>
+        </fieldset>
+        <label>Provide a short description about yourself:
+            <textarea id="description" name="description" rows="3" cols="30" placeholder="Tell us a little about yourself"></textarea>
+        </label>
+        <label for="I accept terms-and-conditions">
+            <input id="I accept terms-and-conditions" type="checkbox" class="inline" name="terms" required>I accept <a href="https://www.freecodecamp.org/news/terms-of-service/">the terms and conditions</a>
+        </label>
+        
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>
